@@ -47,6 +47,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\RubyController.cs" />
      <None Include="Assets\2DBeginner_Third-PartyNotice.txt" />
  <Reference Include="UnityEngine">

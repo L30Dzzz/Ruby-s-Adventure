@@ -8,6 +8,7 @@ public class RubyController : MonoBehaviour
     float horizontal; 
     float vertical;
     public int maxHealth = 5;
+    public int health { get { return currentHealth; }}
     int currentHealth;
     public float speed = 3.0f;
     

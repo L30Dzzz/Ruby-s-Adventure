@@ -731,6 +731,16 @@
       <Name>Unity.2D.IK.Runtime</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{197E191E-14CE-1609-F19A-5D2F0A7CCFAE}</Project>
+      <Name>Cinemachine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{402EB2CE-6FF1-7588-C8F1-41D1EEEF39BC}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
       <Project>{BBEFBBF3-904C-79B7-2FD5-FDA4092B40DF}</Project>
       <Name>Unity.2D.Animation.Triangle.Runtime</Name>

@@ -114,6 +114,23 @@ public class RubyController : MonoBehaviour
 
         animator.SetTrigger("Launch");
     }
+
+        AudioSource audioSource;
+
+    void Start()
+    {
+        rigidbody2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
+
+        audioSource= GetComponent<AudioSource>();
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
+    
 }
 
    

@@ -187,3 +187,4 @@ Received Import Request.
 Start importing Assets/Scripts/HealthCollectible.cs using Guid(a3ee1b8c88a174d07942514bb137d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd1fd242ae42ae334a6d51a6ffe78be') in 0.325307 seconds 
   Import took 0.332723 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

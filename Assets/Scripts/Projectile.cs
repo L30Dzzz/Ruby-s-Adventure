@@ -27,7 +27,9 @@ public class Projectile : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         EnemyController e = other.collider.GetComponent<EnemyController>();
-        if (e != null)
+        NonPlayerCharacter npc = GameObject.Find("GearPurify").GetComponent<NonPlayerCharacter>();
+        Debug.Log(npc.fixedGear);
+        if (e != null && npc.fixedGear == true)
         {
             e.Fix();
         }

@@ -7,6 +7,7 @@ public class NonPlayerCharacter : MonoBehaviour
     public float displayTime = 4.0f;
     public GameObject dialogBox;
     float timerDisplay;
+    public bool fixedGear;
     
     void Start()
     {
@@ -30,5 +31,14 @@ public class NonPlayerCharacter : MonoBehaviour
     {
         timerDisplay = displayTime;
         dialogBox.SetActive(true);
+    }
+
+    void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            DisplayDialog();
+            fixedGear = true;
+        }
     }
 }

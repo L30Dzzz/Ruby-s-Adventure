@@ -9,6 +9,8 @@ public class RubyController : MonoBehaviour
     public int maxHealth = 5;
     
     public GameObject projectilePrefab;
+    float shootTime = 1.5f;
+    float shootTimer = Time.time;
     
     public int health { get { return currentHealth; }}
     int currentHealth;
@@ -47,6 +49,7 @@ public class RubyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         
@@ -69,11 +72,18 @@ public class RubyController : MonoBehaviour
                 isInvincible = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.C))
+        // Timer to stop spamming the shoot button  
+        shootTimer += Time.deltaTime;
+        if(shootTimer >= shootTime)
         {
-            Launch();
-            PlaySound(throwSound);
+            if(Input.GetKeyDown(KeyCode.C))
+            {
+                Launch();
+                PlaySound(throwSound);
+                shootTimer = 0;
+            }
         }
+        
 
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -126,6 +136,7 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 350);
 
         animator.SetTrigger("Launch");
+
     }
 }
 

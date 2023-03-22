@@ -77,7 +77,7 @@ public class EnemyController : MonoBehaviour
         if (player != null)
         {
             player.ChangeHealth(-1);
-            }
+        }
     }
 
     //Public because we want to call it from elsewhere like the projectile script

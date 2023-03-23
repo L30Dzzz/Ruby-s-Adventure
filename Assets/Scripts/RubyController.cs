@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RubyController : MonoBehaviour
-{
+{ 
+    public Transform respawnPoint;
     public float speed = 3.0f;
     
     public int maxHealth = 5;
@@ -30,7 +31,9 @@ public class RubyController : MonoBehaviour
 
     public AudioClip throwSound;
     public AudioClip hitSound;
-    
+
+   
+     
     // Start is called before the first frame update
     void Start()
     {
@@ -125,6 +128,12 @@ public class RubyController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+
+        if (currentHealth < 1) 
+        {
+            transform.position = respawnPoint.position;
+            ChangeHealth(maxHealth);
+        }
     }
     
     

@@ -31,9 +31,8 @@ public class RubyController : MonoBehaviour
 
     public AudioClip throwSound;
     public AudioClip hitSound;
-
+    public AudioClip walkSound;
    
-     
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +51,6 @@ public class RubyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         
@@ -86,6 +84,11 @@ public class RubyController : MonoBehaviour
                 shootTimer = 0;
             }
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+    {
+        Application.Quit();
+    }
         
 
         if (Input.GetKeyDown(KeyCode.X))
@@ -147,6 +150,7 @@ public class RubyController : MonoBehaviour
         animator.SetTrigger("Launch");
 
     }
+    
 }
 
    

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class RubyController : MonoBehaviour
 { 
     public Transform respawnPoint;
@@ -32,7 +34,7 @@ public class RubyController : MonoBehaviour
     public AudioClip throwSound;
     public AudioClip hitSound;
     public AudioClip walkSound;
-   
+
     // Start is called before the first frame update
     void Start()
     {

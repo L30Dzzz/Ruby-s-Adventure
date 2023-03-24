@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnemyController : MonoBehaviour
 {
     public float speed = 3.0f;
@@ -16,7 +17,7 @@ public class EnemyController : MonoBehaviour
     bool broken = true;
 
     Animator animator;
-    
+   
     // Start is called before the first frame update
     void Start()
     {

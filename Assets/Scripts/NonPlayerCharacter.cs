@@ -9,6 +9,7 @@ public class NonPlayerCharacter : MonoBehaviour
     float timerDisplay;
     public bool fixedGear;
     
+
     void Start()
     {
         dialogBox.SetActive(false);

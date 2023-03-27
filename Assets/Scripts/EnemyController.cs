@@ -82,13 +82,25 @@ public class EnemyController : MonoBehaviour
     }
 
     //Public because we want to call it from elsewhere like the projectile script
+    // public void Fix()
+    // {
+    //     broken = false;
+    //     rigidbody2D.simulated = false;
+    //     //optional if you added the fixed animation
+    //     animator.SetTrigger("Fixed");
+
+    //     smokeEffect.Stop();
+    // }
+
     public void Fix()
     {
         broken = false;
+       
         rigidbody2D.simulated = false;
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
 
         smokeEffect.Stop();
+
     }
 }

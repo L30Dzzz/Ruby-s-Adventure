@@ -35,6 +35,8 @@ public class RubyController : MonoBehaviour
     public AudioClip hitSound;
     public AudioClip walkSound;
 
+    // EnemyController amountFixed = new EnemyController();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -101,8 +103,31 @@ public class RubyController : MonoBehaviour
                 NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
                 if (character != null)
                 {
-                    character.DisplayDialog();
+                    if(!hit.collider.CompareTag("Jambie2"))
+                    {
+                        character.DisplayDialog();
+                    }
+                    
                 }
+
+
+            }
+            RobotKilled rB = FindObjectOfType<RobotKilled>();
+            
+            if (hit.collider != null )
+            {
+                NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
+                if (character != null)
+                {
+                    Debug.Log(rB.counter);
+                    if(rB.counter == 30 && hit.collider.CompareTag("Jambie2"))
+                    {
+                        character.DisplayDialog();
+                    }
+                    
+                }
+
+
             }
         }
     }

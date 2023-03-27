@@ -32,6 +32,11 @@ public class Projectile : MonoBehaviour
         if (e != null && npc.fixedGear == true)
         {
             e.Fix();
+            
+          var robotKilled =  FindObjectOfType<RobotKilled>();
+
+          robotKilled.counter++;
+          
         }
     
         Destroy(gameObject);

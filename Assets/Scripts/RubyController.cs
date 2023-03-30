@@ -120,7 +120,7 @@ public class RubyController : MonoBehaviour
                 if (character != null)
                 {
                     Debug.Log(rB.counter);
-                    if(rB.counter == 30 && hit.collider.CompareTag("Jambie2"))
+                    if(rB.counter == 20 && hit.collider.CompareTag("Jambie2"))
                     {
                         character.DisplayDialog();
                     }

@@ -547,21 +547,21 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'In the far future, a nuclear bomb was set off due to overpopulation, killing
     millions in the process apart from very few people along with the last remains
-    of theur purifying lilies. Although an unfortunate effect the survivors had to
-    experience was a long-term mutation, turning the remaining survivors into animals.
-    Despite these setbacks, they were able to slowly rebuild to their former glory,
-    and all due to the towns mechanic Rubi! With her knowledge of robotics from before
-    the nuke went off she was able to take the energy of the lilies and scraps to
-    make assisting robots for every corner of the island! However one day there was
-    a huge heatwave which made all the robots malfunction, causing havoc for the
-    residents..
+    of their purifying lilies. One more effect the survivors had to endure was a
+    long-term mutation, turning the remaining survivors into animals. Despite these
+    setbacks, they were able to slowly rebuild to their former glory, and all due
+    to the towns mechanic Rubi! With her knowledge of robotics from before the nuke
+    went off she was able to take the energy of the lilies and scraps to make assisting
+    robots for every corner of the island! However one day there was a huge heatwave
+    which made all the robots malfunction, causing havoc for the residents..
 
 
-    With haste Rubi''s uncle, Jambi The Frog knocks on her door
-    and...
+    With
+    haste Rubi''s uncle, Jambi The Frog knocks on her door and...
 
 
-    Press [SPACEBAR] to proceed'
+    Press [SPACEBAR]
+    to proceed'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
